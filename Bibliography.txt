@@ -1,0 +1,7 @@
+Bibliography
+
+1. T. Pornin (2010), "How to generate a random BigInteger value in Java?", found at: https://stackoverflow.com/questions/2290057/how-to-generate-a-random-biginteger-value-in-java
+
+2. Quickprogrammingtips.com (2017), "How To Generate SHA256 Hash in Java", found at: https://www.quickprogrammingtips.com/java/how-to-generate-sha256-hash-in-java.html
+
+3. R. Sedgewick & K. Wayne (2015), "9.9 Cryptography", found at: https://introcs.cs.princeton.edu/java/99crypto/ (Creative Exercises, exercise 1, ExtendedEuclid.java)
