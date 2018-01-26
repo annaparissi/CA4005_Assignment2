@@ -19,15 +19,16 @@ e373388c fa350a4e 66e432d6 38ccdc58 eb703e31 d4c84e50 398f9f91 677e8864
 
 Before the digital signature can be implemented, you will need to set up an appropriate public/private ElGamal key pair as follows:
 
-Generate a random secret key x with 1 < x < p-1
-Compute the public key y as y = gx (mod p)
-To sign a message m you will need to do the following:
+- Generate a random secret key x with 1 < x < p-1
+- Compute the public key y as y = gx (mod p)
+- To sign a message m you will need to do the following:
 
-Choose a random value k with 0 < k < p-1 and gcd(k,p-1) = 1
-Compute r as r = gk (mod p)
-Compute s as s = (H(m)-xr)k-1 (mod p-1) where H is the hash function SHA-256. This should use your own implementation of the extended Euclidean GCD algorithm to calculate the inverse rather than using a library method for this purpose.
-If s=0 start over again
-The pair (r,s) is the digital signature of m
+- Choose a random value k with 0 < k < p-1 and gcd(k,p-1) = 1
+- Compute r as r = gk (mod p)
+- Compute s as s = (H(m)-xr)k-1 (mod p-1) where H is the hash function SHA-256. This should use your own implementation of the extended Euclidean GCD algorithm to calculate the inverse rather than using a library method for this purpose.
+- If s=0 start over again
+- The pair (r,s) is the digital signature of m
+
 Once your implementation is complete, you should create a zip file containing all your code, digitally sign this as shown above, and send me the following by email:
 
 Your public key y in hexadecimal.
